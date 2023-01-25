@@ -1,0 +1,3 @@
+declare type Pokemon ={
+    any
+}

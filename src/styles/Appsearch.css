@@ -1,0 +1,35 @@
+.app-search{
+    position: relative;
+    margin-bottom: 15px;
+    width: 1400px;
+}
+
+.app-search-input{
+    position: absolute;
+    left: 450px;
+    width: 70%;
+    padding: 15px;
+    font-size:18px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+.SearchIcon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    border: 1px solid crimson;
+    left: 1370px;
+    top: 7px;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.SearchIcon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}

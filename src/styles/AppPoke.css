@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+  }
+  .PokeApp{
+    margin-top: -20px;
+    position: relative;
+    text-align: center;
+    background-color: #f6f8fc;
+  } 
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .psychic{
+    background-color: rgba(146, 81, 148, 0.644);
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .ground{
+    background-color: rgba(148, 81, 81, 0.644);
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .ghost{
+    background-color: rgb(247, 247, 247);
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .electric{
+    background-color: rgb(255, 255, 161);
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .bug{
+    background-color: #F6D6A7;
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .poison{
+    background-color: #e0a7f6;
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .normal{
+    background-color: #9b9191;
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .fairy{
+    background-color: rgba(255, 192, 203, 0.863);
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .fire{
+    background-color: #FBE3DF;
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .grass{
+    background-color:#E2F9E1;
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .water{
+    background-color:#E0F1FD;
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .flying{
+    background-color:#5e66d1d8;
+    border: 0 solid ;
+    border-radius: 4px;
+    width: 50px;
+    color: black;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 0.5rem;
+    z-index: 9;
+  }
+  
+  .pokemon-container {
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-right:  30%;
+    margin-left: 200px; ;
+    z-index: 9;
+  }
+  .all-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    gap: 50px ;
+    z-index: 9;
+    
+  }
+  .thumb-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 ;
+    margin: 0.3rem;
+    border: 1px solid #efefef;
+    border-radius: 1rem;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+    height: 100px;
+    z-index: 9;
+  }
+  .thumb-container img {
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: -25px;
+    z-index: 9;
+  }
+  
+  .thumb-container:hover{
+    border: 2px solid gray;
+  }
+  
+  h3 {
+    margin-bottom: 0.2rem;
+    z-index: 9;
+  }
+  
+  .thumb-container .number {
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(255,255,255,0.3);
+    margin-bottom: 15px;
+    z-index: 9;
+  }
+  
+  .thumb-container img {
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+  }
+  
+  .thumb-container small {
+    text-transform: capitalize;
+
+  }
+  
+  .detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -20px;
+    z-index: 9;
+  }
+  
+  .detail-wrapper button {
+    color: rgb(22, 22, 22);
+    padding: .5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.185);
+    z-index: 9;
+  }
+  
+  .load-more {
+    background: #f5f5f5 linear-gradient(#f5f5f5,#f1f1f1) repeat-x;
+    border-radius: 2px;
+    border: 1px solid #c6c6c6;
+    color: #444;
+    padding: 0.5rem 1.5rem;
+    min-width: 50%;
+    margin-top: 1rem;
+    z-index: 9;
+  }
+  
+  .thumb-container img:hover {
+    transform: scale(1.25);
+  }
+  
+  .info-container{
+    z-index: 9;
+  }
+  
+  .Type-container{
+    display:flex;
+    gap: 10px;
+    z-index: 9;
+  }
+  
+  .Search-container{
+    position: absolute;
+    z-index:9;
+    top: 50px;
+    left: -150px;
+    z-index: 9;
+  }
+  
+  .backPicture{
+    position: absolute;
+    z-index: 1;
+    left:10px;
+    top:10px;
+    scale: 1.0;
+    z-index: 9;
+  }
+  
