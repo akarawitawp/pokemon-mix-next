@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "../../components/Button";
-import PokedexLayout2 from "../../components/PokedexLayout2";
+import PokedexLayout3 from "../../components/PokedexLayout3";
 import PokemonCard from "../../components/PokemonCard";
 import { NextCustomPage } from "../../types/next";
-import pokemonInfo from "./[PokedexPageId]";
 
 const HomePage: NextCustomPage = () => {
   const [pokeMon, setPokeMon] = useState<any[]>([]);
@@ -82,5 +81,5 @@ const HomePage: NextCustomPage = () => {
     </div>
   );
 };
-HomePage.Layout = PokedexLayout2;
+HomePage.Layout = PokedexLayout3;
 export default HomePage;

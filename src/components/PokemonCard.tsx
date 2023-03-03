@@ -26,7 +26,7 @@ const PokemonCard: React.FC<PokemonCardProps> = (props) => {
   }, [pokemonInfo]);
   return (
     <Link
-      href={`/pokedex/${info?.id}`}
+      href={`/PokedexPage/${info?.id}`}
       className={twMerge(
         "w-50 text-center p-4 mx-auto",
         "cursor-pointer shadow-xl rounded-xl border border-black border-opacity-5",

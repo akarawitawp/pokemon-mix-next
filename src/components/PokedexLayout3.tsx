@@ -6,7 +6,7 @@ type PokedexLayoutProps = {
   children?: ReactNode;
 };
 
-const PokedexLayout: React.FC<PokedexLayoutProps> = (props) => {
+const PokedexLayout3: React.FC<PokedexLayoutProps> = (props) => {
   const { children } = props;
   return (
     <main
@@ -19,4 +19,4 @@ const PokedexLayout: React.FC<PokedexLayoutProps> = (props) => {
     </main>
   );
 };
-export default PokedexLayout;
+export default PokedexLayout3;

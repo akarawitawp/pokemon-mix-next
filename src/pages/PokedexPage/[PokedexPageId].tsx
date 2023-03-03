@@ -29,7 +29,6 @@ const pokemonInfo = () => {
 
   return (
     <div className="">
-      <div>pokemon pageID -{pokemonId}</div>
       <div className="w-full h-40 relative scale-100 transition-transform">
         {pokemon && (
           <Image
@@ -61,18 +60,20 @@ const pokemonInfo = () => {
         </div>
         <div className="text-center">
           <div>Stat</div>
-          {pokemon?.stats.map((s: any) => (
-            <div className="flex flex-col ml-5">
-              <div className={s.base_stat}>{s.base_stat}</div>
-              <div className={s.stat.name}>{s.stat.name}</div>
-            </div>
-          ))}
+          <div className="flex">
+            {pokemon?.stats.map((s: any) => (
+              <div className="flex flex-col ml-5">
+                <div className={s.base_stat}>{s.base_stat}</div>
+                <div className={s.stat.name}>{s.stat.name}</div>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="w-full text-center">
           <h1>Ability</h1>
           <div className="">
             {pokemon?.abilities.map((a: any) => (
-              <small className="border rounded-sm bg-slate-400 gap-8">
+              <small className="border rounded-sm bg-slate-400 gap-8 ">
                 {a.ability.name}
               </small>
             ))}
