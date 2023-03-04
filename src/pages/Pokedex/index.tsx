@@ -38,7 +38,7 @@ const HomePage: NextCustomPage = () => {
         await console.log(allPokemon);
       });
     }
-    
+
     createPokemonObject(data.results);
     await console.log(allPokemon);
   };

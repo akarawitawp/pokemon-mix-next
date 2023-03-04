@@ -7,7 +7,7 @@ type PokemonThumbnailProps = {
 };
 
 const PokemonThumbnail: React.FC<PokemonThumbnailProps> = (props) => {
-  const { pokemon, onPokemonClick } = props;
+  const { pokemon, onPokemonClick} = props;
 
   return (
     <div
