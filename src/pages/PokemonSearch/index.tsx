@@ -92,6 +92,7 @@ function PokemonSearch() {
                 <img
                   className="pokemonlogo"
                   src="https://nproxy.org/img_contents/4857/29gntwcxhd2n3-16-9.webp"
+                  alt="pokemonshow"
                 />
                 <div className="Hp-container">
                   <div className="Hp">
