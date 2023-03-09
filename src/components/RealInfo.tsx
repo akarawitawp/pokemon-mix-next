@@ -4,6 +4,7 @@ import FakeInfopokemon from "./FakeInfopokemon";
 
 type RealInfoProps = {
   pokemon: any;
+  key: number;
 };
 
 const RealInfo: React.FC<RealInfoProps> = (props) => {
@@ -44,19 +45,19 @@ const RealInfo: React.FC<RealInfoProps> = (props) => {
 
       <div className="Typeinfo-container">
         <h1>Type</h1>
-        {pokemon.types.map((t: any) => (
+        {pokemon.types.map((t: any, key: number) => (
           <small className={[t.type.name] + "Info"}>{t.type.name}</small>
         ))}
       </div>
       <h1>Ability</h1>
       <div className="Ability-container">
-        {pokemon.abilities.map((a: any) => (
+        {pokemon.abilities.map((a: any, key: number) => (
           <small className="ability">{a.ability.name}</small>
         ))}
       </div>
       <h1>Stat</h1>
       <div className="Stat-container">
-        {pokemon.stats.map((s: any) => (
+        {pokemon.stats.map((s: any, key: number) => (
           <div className={s.base_stat}>
             <div className={s.stat.name}>
               {s.base_stat}
