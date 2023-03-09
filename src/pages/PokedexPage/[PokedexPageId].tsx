@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const pokemonInfo = () => {
+const PokemonInfo = () => {
   const router = useRouter();
   const pokemonId = router.query.PokedexPageId;
   const [pokemon, setPokemon] = useState<any>();
@@ -94,4 +94,4 @@ const pokemonInfo = () => {
   );
 };
 
-export default pokemonInfo;
+export default PokemonInfo;

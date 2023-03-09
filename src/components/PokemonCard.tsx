@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import Link from "next/link";
-import { relative } from "path";
 
 type PokemonCardProps = {
   pokemonInfo: any;

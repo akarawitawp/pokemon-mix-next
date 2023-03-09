@@ -98,7 +98,7 @@ const HomePage: NextCustomPage = () => {
           <FakeInfopokemon pokemon={null} />
         )} */}
       </div>
-      <RealInfo pokemon={selectedPokemon} />
+      <RealInfo pokemon={selectedPokemon} key={selectedPokemon?.id} />
     </div>
   );
 };
